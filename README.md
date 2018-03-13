@@ -1,8 +1,8 @@
 # PHYS220 CW 6
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Daniel, Devon, Myranda**
 
-[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-06-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-06-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys220-2018s/cw-06-phys220.svg?branch=master)](https://travis-ci.org/chapman-phys220-2018s/cw-06-phys220)
 
 ## Specification
 
