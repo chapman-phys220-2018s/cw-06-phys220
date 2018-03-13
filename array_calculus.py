@@ -17,27 +17,59 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+def derivative(a,b,n):
+    """ derivative(a,b,n) generates a matrix of the derivative with the 
+    following arguments.
+    
+    Args:
+        a (float) : Lower bound of domain
+        b (float) : Upper bound of domain
+        n (int, optional) : Number of points in domain"""
+    x = np.linspace(a,b,n)
+    dx = (b-a)/(n-1)
+    d = (np.eye(n,n,1)-np.eye(n,n,-1))
+    d[0][0] = -2
+    d[-1][-1] = 2
+    d[0][1] = 2 
+    d[-1][-2] = -2
+    d = d/dx
+    return d
 
 def f(a,b,n):
     """Function will return an array of values satisfying the squared 
-    function"""
+    function
+    
+    Args:
+        a (float) : Lower bound of domain
+        b (float) : Upper bound of domain
+        n (int, optional) : Number of points in domain"""
     x = np.linspace(a,b,n)
     return x**2
 
 def s(a,b,n):
     """Function will return an array of values that satisfy the sine 
-    function"""
-    x= np.linspace(a,b,n)
+    function
+    
+    Args:
+        a (float) : Lower bound of domain
+        b (float) : Upper bound of domain
+        n (int, optional) : Number of points in domain"""
+    x = np.linspace(a,b,n)
 
     def sin(x):
         return np.sin(x)
 
-    sx= np.array(sin(x))
+    sx = np.array(sin(x))
     return (x,sx)
 
 def g(a,b,n)
     """Function will return an array of values satisfying the gaussian 
-    function"""
+    function
+    
+    Args:
+        a (float) : Lower bound of domain
+        b (float) : Upper bound of domain
+        n (int, optional) : Number of points in domain"""
     x = np.linspace(a,b,n)
 
     def gauss(x):
