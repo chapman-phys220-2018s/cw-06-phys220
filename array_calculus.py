@@ -16,7 +16,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-
+    
 def derivative(a,b,n):
     """ derivative(a,b,n) 
     generates a matrix of the derivative with the 
