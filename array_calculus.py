@@ -29,11 +29,12 @@ def derivative(a,b,n):
     x = np.linspace(a,b,n)
     dx = (b-a)/(n-1)
     d = (np.eye(n,n,1)-np.eye(n,n,-1))
-    d[0][0] = -2
-    d[-1][-1] = 2
-    d[0][1] = 2 
-    d[-1][-2] = -2
-    d = d/dx
+    print(d)
+    d[0][0] = -1
+    d[-1][-1] = 1
+    d[0:][0] = d[0:][0]/dx
+    d[0:][1:n-1] = d[0:][1:n-1]/(2*dx)
+    d[0:][n-1] = d[0:][n-1]/dx
     return d
 
 def f(a,b,n):
@@ -46,7 +47,7 @@ def f(a,b,n):
         b (float) : Upper bound of domain
         n (int, optional) : Number of points in domain"""
     x = np.linspace(a,b,n)
-    return x**2
+    return np.array(x**2)
 
 def s(a,b,n):
     """s(a,b,n)
