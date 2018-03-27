@@ -32,5 +32,4 @@ def test_derivative():
     print("Obtained: ",obtained)
     np.testing.assert_almost_equal(obtained, desired)
 
-def test_second_derivative():
 
