@@ -39,6 +39,15 @@ def derivative(a,b,n):
 
 
 def second_derivative(a, b, n):
+    """second_derivative(a,b,n)
+    generates a matrix of the second derivative with the
+    following arguments
+
+    Args:
+        a (float) : Lower bound of domain
+        b (float) : Upper bound of domain
+        n (int, optional) : Number of points in domain
+        """
     x = np.linspace(a,b,n)
     dx = (b-a)/(n-1)
     d = ((np.eye(n,n,2)-np.eye(n,n,-2))-2*np.eye(n))
