@@ -51,7 +51,6 @@ def second_derivative(a, b, n):
     x = np.linspace(a,b,n)
     dx = (b-a)/(n-1)
     d = ((np.eye(n,n,2)-np.eye(n,n,-2))-2*np.eye(n))
-    print (d)
     d[0][0] = 2
     d[0][1] = -4
     d[0][2] = 2
@@ -62,7 +61,9 @@ def second_derivative(a, b, n):
     d[-1][-3] = 2
     d[-2][-1] = 2
     d[-2][-2] = -3
-    return (d/(4*dx**2))
+    d = (d/(4*dx**2))
+    print(d)
+    return d
 
 def f(a,b,n):
     """f(a,b,n)
