@@ -120,3 +120,26 @@ def g(a,b,n):
         return (1/np.sqrt(2*np.pi))*np.exp(-x**2/2)
 
     return np.array(gauss(x))
+
+def make_f_plot(M, M2, x, f, graph title):
+    """make_f_plot creates a plot of the x^2 function, the derivative of 
+    x^2 and also the second derivative.
+    
+    Args:
+        M :
+        M2 : 
+        x : 
+        f : 
+        
+    """
+    deriv_1 = M @ f
+    deriv_2 = M2 @ f
+    font = {"size" : 18}
+    plt.title("TITLE")
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.plot(x, f, color = "blue", label = "function")
+    plt.plot(x, deriv_1, color = "red", label = "first derivative")
+    plt.plot(x, deriv_2, color = "green", label = "second derivative")
+    plt.legend(loc = "upper left")
+plt.show()
