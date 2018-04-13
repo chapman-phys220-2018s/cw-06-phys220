@@ -17,7 +17,7 @@
 
 import numpy as np
 import nose
-import array_calculus as arcalc
+import array_calculus as ac
 
 def test_derivative():
     """Test_derivative() tests the derivative matrix for the chosen values of
@@ -27,7 +27,7 @@ def test_derivative():
         x = np.linspace(-1,1,3)
         sin = np.sin(x)
         return sin
-    obtained = np.array(arcalc.derivative(-1,1,3), sin())
+    obtained = np.array(ac.derivative(-1,1,3), sin())
     print("Desired: ",desired)
     print("Obtained: ",obtained)
     np.testing.assert_almost_equal(obtained, desired)
