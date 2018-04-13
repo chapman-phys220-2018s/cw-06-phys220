@@ -23,7 +23,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**This assignment was really helpful for getting used to working with matmul methods and other ways of dealing with matrix operations. - Daniel**
 
 ## Honor Pledge
 
@@ -35,3 +35,4 @@ I pledge that all the work in this repository is my own with only the following 
 Signed,
 
 **Myranda**
+**Daniel**
